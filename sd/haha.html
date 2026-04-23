@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        body{
+            background-image: url('tth.jpg');
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+            min-height:100vh;
+            margin:0;
+        }
+        .password-box{
+            padding:30px;
+            border-radius:25px;
+            width:300px;
+            margin:150px auto;
+            text-align:center;
+            background-color:aliceblue;
+            font-family:"Brush Script MT",cursive;
+        }
+        input{
+            font-size:20px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        button{
+            font-size:15px;
+            font-family:'Pixelify Sans', sans-serif !important;
+        }
+        h2{
+            color: beige;
+            top:800px;
+            left:1000px;
+            position:absolute;
+            width:300px;
+            font-size:small;
+        }
+    </style>
+    <div class="password-box">
+        <h1>huahuahuahaua password</h1>
+        <input type="password" id="myPassword">
+        <button onclick="checkPass()">submit</button>
+    </div>
+    <script>
+        function checkPass(){
+            var typedValue=document.getElementById("myPassword").value;
+            var correctPass="papyrus"
+            if (typedValue===correctPass){
+                window.location.href="hihi.html";
+            } else {
+                alert("wrong password dumbo")
+            }
+        }
+    </script>
+    <h2>hint:undertale character</h2>
+
+</body>
+</html>
